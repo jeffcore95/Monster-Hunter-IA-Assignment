@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet"  href="Monster hunter type 2.ttf">
+	<meta charset="UTF-8">
+	 <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+	 <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
+</head>
+<body>
+	<style>
+	.mhfont
+{
+	text-decoration: none;
+	font-family: Monster hunter;
+}
+		
+		@import url(https://fonts.googleapis.com/css?family=Raleway:100,400,700);
+body {
+  background-image: url("background/latest.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Raleway, Open Sans, Droid Sans, Roboto,arial, sans-serif;
+  
+}
+
+.blurred-bg {
+  background-image: url("background/latest2.jpg");
+  background-repeat: no-repeat;
+  
+  background-size: cover;
+  background-attachment: fixed;
+  
+}
+
+.box {
+  width: 400px;
+  height: 300px;
+  left: -webkit-calc( 50% - 250px );
+  top: 20%;
+  position: absolute;
+  border-radius: 5px;
+  -moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  text-align: center;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+  display: flex;
+  transition: box-shadow .3s ease;
+}
+.box:active {
+  cursor: move;
+  -moz-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
+}
+.box .content {
+  margin: auto;
+}
+
+h1, h2, a, p {
+  color: white;
+  font-weight: 100;
+}
+.tinted h1, .tinted h2, .tinted a, .tinted p {
+  color: black;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);
+}
+
+h2 {
+  font-size: 14px;
+}
+
+p {
+  margin: 20px;
+}
+p.related {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #444;
+}
+p.related a {
+  font-weight: 700;
+  text-decoration: none;
+}
+p.related a:hover {
+  text-decoration: underline;
+}
+.topnav
+{
+	overflow: hidden;
+	background-color: black; 
+
+}
+.topnav a
+{
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 22px;
+}
+.topnav a:hover
+{
+	background-color: grey;
+	color:white;
+}
+.footer
+{
+	background-color: black;
+	text-align: center;
+	clear: both;
+	padding: 3px;
+	margin: -8px;
+	right: 0;
+	left: 0;
+	top: 4750px;
+	position:absolute;	
+}
+
+
+
+
+
+
+
+	</style>
+
+<!-- top nav -->
+
+<div class="topnav" id="mytopnav">
+		
+			<a href="My webpage.html" class="mhfont">Home</a>
+			<a href="Introduction.html" class="mhfont">Introduction</a>
+			<a href="gallary.html" class="mhfont">Gallery</a>
+			<a href="about me.html" class="mhfont">About Me</a>
+</div>
+
+<!-- row 1 -->
+
+<div id="box1" class="box blurred-bg" style="width: 700px;height: 100px;top: 90px;left: 325px;">
+  <div class="content">
+    <h1 class="mhfont"><strong>Weapons and Armor</strong></h1>
+	</div>
+</div>
+
+<!-- row 2 -->
+
+<div id="box1" class="box blurred-bg" style="height:180px;left: 120px;top: 260px;width: 1100px;">
+  <div class="content">
+    <h1 class="mhfont">Weapons</h1>
+	   
+    	<p style="text-align: left;">There are close-range and long-range weapons, weapons for Blademasters only and weapons for Gunners only. The type of armor you can equip depends on the weapon you are using.</p>
+  </div>
+</div>
+
+
+
+<!-- row 3 -->
+
+<div id="box1" class="box blurred-bg" style="height:180px;left: 120px;top: 520px;width:1100px;">
+  <div class="content">
+    <h1 class="mhfont">Attack Types</h1>
+      <div style="text-align: left;">
+    	<p>There are three attack types: Cutting, Blunt, and Ammo. Monsters' resistance and vulnerability to these types will vary by body part. You can do more damage if you attack a part that is more vulnerable to your weapon's type of attack.</p>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- row 4 -->
+
+<div id="box1" class="box blurred-bg" style="height:180px;left: 120px;top: 780px;width:1100px;">
+  <div class="content">
+	    <h1 class="mhfont">Cutting</h1>
+      <div style="text-align: left;">
+    	<p>Cutting attacks can be used to cut the tails off certain monsters. Attacks such as sword slashes and lance thrusts fall into this category.</p>
+       </div>
+  </div>
+</div>
+
+
+
+
+<!-- row 5 -->
+
+<div id="box1" class="box blurred-bg" style="height:180px;left: 120px;top: 1040px;width:1100px;">
+	<div class="content">
+     <h1 class="mhfont">Blunt</h1>
+     <div style="text-align: left;">
+    	<p>Blunt attacks rob monsters of their Stamina and can stun them if you hit them on the head. Shield attacks and Hammer attacks are two examples of blunt attacks.</p>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- row 6 -->
+
+
+<div id="box1" class="box blurred-bg" style="height:280px;left: 120px;top:1300px;width:1100px;">
+  <div class="content">
+     <h1 class="mhfont">Ammo</h1>
+     <h3 class="mhfont" style="color: white;">The Bow and Bowguns use ammo to attack. Most ammo types have an additional property or element.</h3>
+     <img src="icon/ammo.png" style="width:120px;float: left;margin-right:20px;">
+    <div style="text-align: left;">
+    	<p>Several weapons have special traits. Some weapons can become sharper or reload their ammo if you evade with your weapon drawn, while other weapons can charge the Hunter Arts gauge quicker than their counterparts. Make sure to read the descriptions of each weapon to find out what they do.</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- row 7 -->
+
+<div id="box1" class="box blurred-bg" style="height:180px;left: 120px;top:1660px;width: 1100px;">
+  <div class="content">
+    <h1 class="mhfont">Armor</h1>
+    	<p>Armor is divided up into five parts: Head, Chest, Arms, Waist, and Legs. Equipping a complete armor set consisting of all of the parts of its series often activates certain skills. Some armor only has one piece and does not belong to any specific series of armor.</p>
+  </div>
+</div>
+
+
+<div id="box1" class="box blurred-bg" style="height:180px;left: 120px;top:1920px;width: 1100px;">
+  <div class="content">
+    <h1 class="mhfont">Acquiring Armor</h1>
+      <h3 class="mhfont" style="color: white;">Forging at the Smithy</h3>
+      <p>Provided you have the money and necessary materials, you can forge equipment at the Smithy that is normally not available at the Armory.</p>
+  </div>
+</div>
+
+
+
+
+<!-- noffdakslfhdlsafdhsalfda -->
+
+
+<div id="box1" class="box blurred-bg" style="height:380px;left: 120px;top:2180px;width: 1100px;">
+  <div class="content">
+    <h1 class="mhfont">Upgrading Equipment</h1>
+    <h3 class="mhfont" style="color: white;">Weapons</h3>
+      <img src="icon/weapon.jpg" style="width: 400px;float: left;margin-right:20px;margin-top: -40px;">
+      <p style="text-align: left">Weapons are upgraded by level, and the higher the level the stronger the weapon becomes. How much you can upgrade a weapon differs depending on the weapon. Upgrades require both materials and zenny.<br><br>Upgrading a weapon to a certain level will allow you to create different variations. If you choose to create a variation, the weapon's level will revert back to 1.
+</p>
+  </div>
+</div>
+
+
+
+
+<div id="box1" class="box blurred-bg" style="height:220px;left: 120px;top:2640px;width: 1100px;">
+  <div class="content">
+    <h1 class="mhfont">Armor</h1>
+      <p style="text-align: left">Armor pieces are upgraded by level, and the higher the level the stronger the armor becomes. How much you can upgrade a piece of armor differs depending on the piece of armor. Upgrades require both materials and zenny.<br><br>To upgrade a piece of armor, you will need Armor Spheres, materials, and the necessary zenny.</p>
+  </div>
+</div>
+
+
+
+
+
+<div id="box1" class="box blurred-bg" style="height:350px;left: 120px;top:2945px;width: 1100px;">
+  <div class="content">
+    <h1 class="mhfont">About Material Types</h1>
+      <img src="icon/material.jpg" style="width: 400px;float: left;margin-right: 20px;">
+      <p style="text-align: left;"><br>Sometimes, forging and upgrading equipment won't require specific materials, but rather any materials from a specific category. You can choose any material within the Material Type to upgrade equipment.<br><br>Materials also have a Value attached to them. Once the Value of the materials you have chosen meets the requirement, you can upgrade the piece of equipment.</p>
+  </div>
+</div>
+
+
+
+
+<div id="box1" class="box blurred-bg" style="height:250px;left: 120px;top:3380px;width: 1100px;">
+  <div class="content">
+    <h1 class="mhfont">About Material Values</h1>
+      <p style="text-align: left;">Materials have a specific Value. While some materials may belong to multiple Material Types, their Values are always the same.</p>
+      <img src="icon/ammo.png" style="width: 120px;float: left;margin-right: 20px;margin-top: -20px;">
+      <p style="text-align: left;">A weapon changes names when it's fully upgraded.<br>Read the description to check what its original name was.</p>
+  </div>
+</div>
+
+
+
+
+
+<div id="box1" class="box blurred-bg" style="height:600px;left: 120px;top:3720px;width: 1100px;">
+  <div class="content">
+   <img src="icon/kinsect.jpg" style="width: 400px;margin-right: 20px;float: left;">
+    <h1 class="mhfont" style="text-align: left;">Upgrading Kinsects</h1>
+      <p style="text-align: left;">Upgrading Kinsects requires food. You can acquire food for your Kinsect by gathering them during a Quest. Once you have food, go to the Smithy and select Feed Kinsect.<br><br>Once your Kinsect's stats increase a certain amount, you'll be able to level up or evolve your Kinsect.</p>
+      <img src="icon/kinsectchart.jpg" style="width: 400px;">
+  </div>
+</div>
+
+
+<div id="box1" class="box blurred-bg" style="height:210px;left: 120px;top:4410px;width: 1100px;">
+  <div class="content">
+    <h1 class="mhfont">Zenny</h1>
+      
+      <p style="text-align: left;">Zenny is the currency that allows you to purchase items as well as forge equipment and pay for your meals. You can earn zenny by completing Quests and selling off your unwanted gear and items.<br><br>Zenny is marked by a "<span class="mhfont">Z</span>" while at a shop.</p>
+  </div>
+</div>
+
+
+
+<!-- footer -->
+<div class="footer">
+	<p>Copyright &copy;2018 southern</p>
+</div>
+
+</body>
+</html>

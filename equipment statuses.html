@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet"  href="Monster hunter type 2.ttf">
+	<meta charset="UTF-8">
+	 <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+	 <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
+</head>
+<body>
+	<style>
+	.mhfont
+{
+	text-decoration: none;
+	font-family: Monster hunter;
+}
+		
+		@import url(https://fonts.googleapis.com/css?family=Raleway:100,400,700);
+body {
+  background-image: url("background/latest.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Raleway, Open Sans, Droid Sans, Roboto,arial, sans-serif;
+  
+}
+
+.blurred-bg {
+  background-image: url("background/latest2.jpg");
+  background-repeat: no-repeat;
+  
+  background-size: cover;
+  background-attachment: fixed;
+  
+}
+
+.box {
+  width: 400px;
+  height: 300px;
+  left: -webkit-calc( 50% - 250px );
+  top: 20%;
+  position: absolute;
+  border-radius: 5px;
+  -moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  text-align: center;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+  display: flex;
+  transition: box-shadow .3s ease;
+}
+.box:active {
+  cursor: move;
+  -moz-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
+}
+.box .content {
+  margin: auto;
+}
+
+h1, h2, a, p {
+  color: white;
+  font-weight: 100;
+}
+.tinted h1, .tinted h2, .tinted a, .tinted p {
+  color: black;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);
+}
+
+h2 {
+  font-size: 14px;
+}
+
+p {
+  margin: 20px;
+}
+p.related {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #444;
+}
+p.related a {
+  font-weight: 700;
+  text-decoration: none;
+}
+p.related a:hover {
+  text-decoration: underline;
+}
+.topnav
+{
+	overflow: hidden;
+	background-color: black; 
+
+}
+.topnav a
+{
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 22px;
+}
+.topnav a:hover
+{
+	background-color: grey;
+	color:white;
+}
+.footer
+{
+	background-color: black;
+	text-align: center;
+	clear: both;
+	padding: 3px;
+	margin: -8px;
+	right: 0;
+	left: 0;
+	top: 2480px;
+	position:absolute;	
+}
+
+
+th
+{
+  text-decoration: underline;
+  font-family: Monster hunter;
+  color: white;
+  font-size: 20px;
+}
+
+td
+{
+  padding: 15px;
+  color: white;
+  text-align: left;
+}
+
+
+	</style>
+
+<!-- top nav -->
+
+<div class="topnav" id="mytopnav">
+		
+			<a href="My webpage.html" class="mhfont">Home</a>
+			<a href="Introduction.html" class="mhfont">Introduction</a>
+			<a href="gallary.html" class="mhfont">Gallery</a>
+			<a href="about me.html" class="mhfont">About Me</a>
+</div>
+
+<!-- row 1 -->
+
+<div id="box1" class="box blurred-bg" style="width: 700px;height: 200px;top: 90px;left: 325px;">
+  <div class="content">
+    <h1 class="mhfont"><strong>Equipment Statuses</strong></h1>
+    <p style="text-align: left;">Weapons and armor have various characteristics. Understanding what they are is vital in deciding what weapons and armor are best suited for your hunter. You can view equipment details in your Item Box, via the menu, or at the Smithy.</p>
+	</div>
+</div>
+
+<div id="box1" class="box blurred-bg" style="height:1150px;left: 120px;top:390px;width: 1100px;">
+  <div class="content">
+    <h1 class="mhfont"><strong>Weapon Status</strong></h1>
+      <table>
+        
+      <tr>
+        <th>Weapon Level</th>
+        <th>Attack</th>
+        <th>Defense</th>
+        <th>Element</th>
+      </tr>
+      <tr>
+        <td>Your weapon's level.</td>
+        <td>Your weapon's attack power.</td>
+        <td>Additional Defense gained from equipping certain weapons.</td>
+        <td>The elemental damage a weapon inflicts.</td>
+      </tr>
+      <tr>
+        <th>Sharpness</th>
+        <th>Slots</th>
+        <th>Affinity</th>
+        <th>Notes</th>
+      </tr>
+      <tr>
+        <td>A gauge that shows a weapon's Sharpness. A weapon's Sharpness decreases with use, and as it does, its icon will switch down through the colors displayed in the Sharpness gauge.</td>
+        <td>The number of slots you can use for Decorations.</td>
+        <td>The higher this number, the higher the chance your attacks will deal extra damage. If this number is negative, your attacks will sometimes deal less damage than usual.</td>
+        <td>Musical notes exclusive to the selected Hunting Horn.</td>
+      </tr>
+      <tr>
+        <th>Shot Type/Level</th>
+        <th>Phial Type</th>
+        <th>Reload</th>
+        <th>Deviation</th>
+      </tr>
+      <tr>
+        <td>Gunlance shell type and Attack level.</td>
+        <td>The type of phial used by the Switch Axe or Charge Blade.</td>
+        <td>How long it takes to reload the Bowgun.</td>
+        <td>The trajectory deviation of ammo shot from the Bowgun.</td>
+      </tr>
+      <tr>
+        <th>Recoil</th>
+        <th>Arc Shots</th>
+        <th>Rarity</th>
+        <th>Hunter Type</th>
+      </tr>
+      <tr>
+        <td>How much recoil the Bowgun has when shooting.</td>
+        <td>The type of Arc Shot a Bow fires.</td>
+        <td>How rare an item is. The bigger the number, the more difficult the item is to acquire.</td>
+        <td>Your current hunter type (Blademaster or Gunner).</td>
+      </tr>
+      <tr>
+        <th>Melody Effects</th>
+        <th>Kinsect</th>
+        <th>Ammo</th>
+        <th>Internal Ammo</th>
+      </tr>
+      <tr>
+        <td>Melody effects that you can perform with the Hunting Horn.</td>
+        <td>The abilities of your Kinsect.</td>
+        <td>The amount, type, and level of ammo that can be loaded by the Bowgun.</td>
+        <td>The type of internal ammo, plus the type and level of ammo that can be loaded by the Bowgun.</td>
+      </tr>
+      <tr>
+        <th>Rapid Fire</th>
+        <th>Crouching Fire</th>
+        <th>Charged Shots</th>
+        <th>Usable Coatings</th>
+      </tr>
+      <tr>
+        <td>The type and number of ammo compatible with the Light Bowgun's Rapid Fire, and the deviation after firing.</td>
+        <td>The type of ammo you can use with the Heavy Bowgun's Crouching Fire.</td>
+        <td>The types and levels of Charged Shots that can be unleashed by the Bow.</td>
+        <td>The types of coatings you can use with the Bow.</td>
+      </tr>
+      <tr>
+        <td></td>
+        <th colspan="2">Equippable Coatings</th>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td colspan="2">The types and levels of coatings that can be used on arrows shot from the Bow.</td>
+      </tr>
+      </table>
+     
+  </div>
+</div>
+
+
+<div id="box1" class="box blurred-bg" style="height:450px;left: 120px;top:1650px;width: 1100px;">
+  <div class="content">
+    <h1 class="mhfont"><strong>Armor Status</strong></h1>
+      <table>
+        <tr>
+          <th>Armor Level</th>
+          <th>Defense</th>
+          <th>Elemental Resistance</th>
+          <th>Slots</th>
+        </tr>
+        <tr>
+          <td>The level of the armor.</td>
+          <td>The defensive power of the armor.</td>
+          <td>The elements a piece of armor is resistant to. The higher the value, the higher the resistance.</td>
+          <td>The number of slots you can use for Decorations.</td>
+        </tr>
+        <tr>
+          <th>Rarity</th>
+          <th>Hunter Type</th>
+          <th>Active Skills</th>
+          <th>Skill Points</th>
+        </tr>
+        <tr>
+          <td>The rarity of an item. The higher the number, the more difficult it is to acquire.</td>
+          <td>The type of hunter that can equip the armor (Blademaster or Gunner).</td>
+          <td>The skills currently activated.</td>
+          <td>The skill points a piece of armor has.</td>
+        </tr>
+      </table>
+    
+  </div>
+</div>
+
+<div id="box1" class="box blurred-bg" style="height:180px;left: 120px;top:2210px;width: 1100px;">
+  <div class="content">
+    <h1 class="mhfont">Elemental Types</h1>
+      
+      <p style="text-align: left;">Weapons have different elemental properties such as Fire, Ice, Poison, and Paralysis. Monsters have weaknesses to certain elements, and take extra damage from weapons that have those properties. Take into account a monster's traits to find out which element works best to deal damage to them.</p>
+  </div>
+</div>
+
+
+
+
+<!-- footer -->
+<div class="footer">
+	<p>Copyright &copy;2018 southern</p>
+</div>
+
+</body>
+</html>

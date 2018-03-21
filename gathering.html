@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet"  href="Monster hunter type 2.ttf">
+	<meta charset="UTF-8">
+	 <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+	 <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
+</head>
+<body>
+	<style>
+	.mhfont
+{
+	text-decoration: none;
+	font-family: Monster hunter;
+}
+		
+		@import url(https://fonts.googleapis.com/css?family=Raleway:100,400,700);
+body {
+  background-image: url("background/latest.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Raleway, Open Sans, Droid Sans, Roboto,arial, sans-serif;
+  
+}
+
+.blurred-bg {
+  background-image: url("background/latest2.jpg");
+  background-repeat: no-repeat;
+  
+  background-size: cover;
+  background-attachment: fixed;
+  
+}
+
+.box {
+  width: 400px;
+  height: 300px;
+  left: -webkit-calc( 50% - 250px );
+  top: 20%;
+  position: absolute;
+  border-radius: 5px;
+  -moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  text-align: center;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+  display: flex;
+  transition: box-shadow .3s ease;
+}
+.box:active {
+  cursor: move;
+  -moz-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
+}
+.box .content {
+  margin: auto;
+}
+
+h1, h2, a, p {
+  color: white;
+  font-weight: 100;
+}
+.tinted h1, .tinted h2, .tinted a, .tinted p {
+  color: black;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);
+}
+
+h2 {
+  font-size: 14px;
+}
+
+p {
+  margin: 20px;
+}
+p.related {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #444;
+}
+p.related a {
+  font-weight: 700;
+  text-decoration: none;
+}
+p.related a:hover {
+  text-decoration: underline;
+}
+.topnav
+{
+	overflow: hidden;
+	background-color: black; 
+
+}
+.topnav a
+{
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 22px;
+}
+.topnav a:hover
+{
+	background-color: grey;
+	color:white;
+}
+.footer
+{
+	background-color: black;
+	text-align: center;
+	clear: both;
+	padding: 3px;
+	margin: -8px;
+	right: 0;
+	left: 0;
+	top: 3350px;
+	position:absolute;	
+}
+
+
+
+
+
+
+
+	</style>
+
+<!-- top nav -->
+
+<div class="topnav" id="mytopnav">
+		
+			<a href="My webpage.html" class="mhfont">Home</a>
+			<a href="Introduction.html" class="mhfont">Introduction</a>
+			<a href="gallary.html" class="mhfont">Gallery</a>
+			<a href="about me.html" class="mhfont">About Me</a>
+</div>
+
+<!-- row 1 -->
+
+<div id="box1" class="box blurred-bg" style="width: 700px;height: 100px;top: 90px;left: 325px;">
+  <div class="content">
+    <h1 class="mhfont"><strong>Gathering/Carving</strong></h1>
+	</div>
+</div>
+
+<!-- row 2 -->
+
+<div id="box1" class="box blurred-bg" style="height:530px;left: 120px;top: 260px;width: 1100px;">
+  <div class="content">
+    <h1 class="mhfont">Gathering Items/Carving</h1>
+	    <img src="icon/gather1.jpg" style="width: 400px;">
+       <img src="icon/gather2.jpg" style="width: 400px;">
+    	<p style="text-align: left;">You can gather many useful items while on a hunt. Gathering points will vary by locale and Quest, but an icon will appear over certain stalks of grass, mushrooms, and other objects to indicate where you can gather.Interact at these points to start gathering. When you've slain a monster, you can carve materials from it.<br><br>
+
+Some gathering points require specific items. If you don't have that specific item in your item pouch, you won't be able to gather from those points.<br><br>
+
+Gathering Points will respawn after a period of time. If you want to gather everything from one spot,interact again to keep gathering.</p>
+  </div>
+</div>
+
+
+
+<!-- row 3 -->
+
+<div id="box1" class="box blurred-bg" style="height:280px;left: 120px;top: 860px;width:1100px;">
+  <div class="content">
+    <img src="icon/mining.jpg" style="width: 400px;float: left;margin-right: 50px;">
+    <h1 class="mhfont">Mining</h1>
+      <div style="text-align: left;">
+    	<p>If you have a Pickaxe, you can mine in areas that are rich in ore. Pickaxes can break during use, so it's a good idea to bring a few of them with you, or use a Mega Pickaxe, which lasts longer.</p>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- row 4 -->
+
+<div id="box1" class="box blurred-bg" style="height:280px;left: 120px;top: 1210px;width:1100px;">
+  <div class="content">
+     <img src="icon/catchingbug.jpg" style="width: 400px;float: left;margin-right: 50px;">
+	    <h1 class="mhfont">Catching Bugs</h1>
+      <div style="text-align: left;">
+    	<p>If you have a Bug Net, you can catch insects wherever you see them flying around. Bug Nets can break during use, so it's a good idea to bring a few of them with you, or use a Mega Bug Net, which lasts longer.</p>
+       </div>
+  </div>
+</div>
+
+
+
+
+<!-- row 5 -->
+
+<div id="box1" class="box blurred-bg" style="height:280px;left: 120px;top: 1565px;width:1100px;">
+	<div class="content">
+  	 <img src="icon/fishing.jpg" style="width: 400px;float: left;margin-right: 50px;">
+     <h1 class="mhfont">Fishing</h1>
+     <div style="text-align: left;">
+    	<p>You can fish at fishing points when out in the wild. Cast your line by interact it, even if you don't have any bait. When you do have bait, such as Worms, you can add it to your lure by selecting it from the Item Bar and use it. Once you've cast your lure, fish will begin to gather towards it. Wait until you see a fish pull the lure below the surface, then reel it in.</p>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- row 6 -->
+
+
+<div id="box1" class="box blurred-bg" style="height:280px;left: 120px;top:1920px;width:1100px;">
+  <div class="content">
+    <img src="icon/biggamefishing.jpg" style="width: 400px;float: left;margin-right: 50px;">
+    <h1 class="mhfont">Big-game Fishing</h1>
+    <div style="text-align: left;">
+    	<p>Head for water to try to catch some fish. If you happen to catch a big fish, a special gauge will appear on the screen. Rapidly press any button and rotate around to fill the gauge. If you can fill it within the time limit, you'll successfully fish out your catch.</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- row 7 -->
+
+<div id="box1" class="box blurred-bg" style="height:430px;left: 120px;top:2280px;width: 1100px;">
+  <div class="content">
+    <h1 class="mhfont">Fishing Out Monsters</h1>
+	    <img src="icon/fishmonster1.jpg" style="width: 400px;">
+	    <img src="icon/fishmonster2.jpg" style="width: 400px;">
+    	<p>Sometimes you'll fish out monsters as well. Monsters can be fished out with certain bait or under specific conditions. Study up on each monster and try out various methods.</p>
+  </div>
+</div>
+
+
+<div id="box1" class="box blurred-bg" style="height:500px;left: 120px;top:2790px;width: 1100px;">
+  <div class="content">
+    <h1 class="mhfont">The Veggie Elder</h1>
+      <img src="icon/elder1.jpg" style="width: 400px;">
+      <img src="icon/elder2.jpg" style="width: 400px;">
+      <p>The Veggie Elder that appears in some locales will sometimes give you presents. If you spot him, make sure to take the time to speak to him.<br><br>Sometimes when he's got something special in his Item Pouch, he'll offer to make a trade with you. However, not everything he has to trade is worth the price, so don't agree to a trade if you think you'll end up with the short end of the stick.</p>
+  </div>
+</div>
+
+
+
+
+
+<!-- footer -->
+<div class="footer">
+	<p>Copyright &copy;2018 southern</p>
+</div>
+
+</body>
+</html>

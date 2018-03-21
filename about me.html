@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet"  href="Monster hunter type 2.ttf">
+	<meta charset="UTF-8">
+	 <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+	 <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+	<style>
+	.mhfont
+{
+	text-decoration: none;
+	font-family: Monster hunter;
+}
+		
+		@import url(https://fonts.googleapis.com/css?family=Raleway:100,400,700);
+body {
+  background-image: url("background/latest.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Raleway, Open Sans, Droid Sans, Roboto,arial, sans-serif;
+  
+}
+
+.blurred-bg {
+  background-image: url("background/latest2.jpg");
+  background-repeat: no-repeat;
+  
+  background-size: cover;
+  background-attachment: fixed;
+  
+}
+
+.box {
+  width: 400px;
+  height: 300px;
+  left: -webkit-calc( 50% - 250px );
+  top: 20%;
+  position: absolute;
+  border-radius: 5px;
+  -moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  text-align: center;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+  display: flex;
+  transition: box-shadow .3s ease;
+}
+.box:active {
+  cursor: move;
+  -moz-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
+}
+.box .content {
+  margin: auto;
+}
+
+h1, h2, a, p {
+  color: white;
+  font-weight: 100;
+}
+.tinted h1, .tinted h2, .tinted a, .tinted p {
+  color: black;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);
+}
+
+h2 {
+  font-size: 14px;
+}
+
+p {
+  margin: 20px;
+}
+p.related {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #444;
+}
+p.related a {
+  font-weight: 700;
+  text-decoration: none;
+}
+p.related a:hover {
+  text-decoration: underline;
+}
+.topnav
+{
+	overflow: hidden;
+	background-color: black; 
+
+}
+.topnav a
+{
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 22px;
+}
+.topnav a:hover
+{
+	background-color: grey;
+	color:white;
+}
+.footer
+{
+	background-color: black;
+	text-align: center;
+	clear: both;
+	padding: 3px;
+	margin: -8px;
+	right: 0;
+	left: 0;
+	top: 3030px;
+	position:absolute;	
+}
+
+
+* {box-sizing: border-box;}
+.myImg
+{
+	border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+.myImg:hover
+{
+	opacity: 0.7;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+td
+{
+	text-align: left;
+}
+
+
+
+
+.prev
+{
+  left: 0;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+  position: relative;
+
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+#timedisplay
+{
+  position: absolute;
+    right: 0%;
+    bottom: 0.1%;
+    background-color: black;
+    font-size:1vw;
+    height: 20%;
+    width: 25%;
+
+
+}
+
+	</style>
+
+<!-- top nav -->
+
+<div class="topnav" id="mytopnav">
+		
+			<a href="My webpage.html" class="mhfont">Home</a>
+			<a href="Introduction.html" class="mhfont">Introduction</a>
+			<a href="gallary.html" class="mhfont">Gallery</a>
+			<a href="about me.html" class="mhfont">About Me</a>
+</div>
+
+
+<div id="box1" class="box blurred-bg" style="width: 700px;height: 300px;top: 90px;left: 325px;">
+  <div class="content">
+    <h1 class="mhfont"><strong>About Me</strong></h1>
+    <img src="aboutme/咕咕鴨縮圖-去背.png" style="width: 200px;float: left;margin-right: 20px;">
+    <table>
+    <tr>
+    	<td style="font-weight: bold;">Name</td>
+    	<td class="mhfont" style="font-size: 25px;">Amagiya Yoake</td>
+	</tr>
+	<tr>
+		<td style="font-weight: bold;">Race</td>
+		<td class="mhfont" style="font-size: 25px;">Mascot</td>
+	</tr>
+	<tr>
+		<td style="font-weight: bold;">Favorite Weapon</td>
+		<td class="mhfont" style="font-size: 25px;">Range Weapon</td>
+	</tr>
+	<tr>
+		<td style="font-weight: bold;">Experience in Monster Hunter</td>
+		<td class="mhfont" style="font-size: 25px;">MH2G, MH3, MHGen, MHfg, Mhfz</td>
+	</tr>
+	</table>
+    <p style="text-align: left;"></p>
+  </div>
+</div>
+
+<div id="box1" class="box blurred-bg" style="width: 700px;height: 90px;top: 600px;left: 325px;">
+  <div class="content">
+    <h1 class="mhfont">My Personal Gallery</h1>
+ </div>
+</div>
+
+
+
+<div id="box1" class="box blurred-bg" style="width:1100px;height: 1100px;top:700px;left: 120px;">
+
+  <div class="content">
+    <div class="row"> 
+  <div class="column">
+    <img class="myImg" src="aboutme/1.jpg" alt="A family photo in MHFZ">
+    <img class="myImg" src="aboutme/2.jpg" alt="The moment of Sensei meditation">
+    <img class="myImg" src="aboutme/3.jpg" alt="The cool moment when Sensei hunting with bow">
+    <img class="myImg" src="aboutme/18.jpg" alt="Dragonmon Senpai's guardian">
+    <img class="myImg" src="aboutme/4.jpg" alt="Akumi Senpai in Red Hood costume">
+  </div>
+  <div class="column">
+    <img class="myImg" src="aboutme/6.jpg" alt="Sensei in Red Hood costume">
+    <img class="myImg" src="aboutme/7.jpg" alt="The celebration of Chinese New Year">
+    <img class="myImg" src="aboutme/16.jpg" alt="Mo Senpai's Guardian">
+    <img class="myImg" src="aboutme/8.jpg" alt="When I got caught during training">
+    <img class="myImg" src="aboutme/9.jpg" alt="Sake Time ~.~">
+  </div>
+  <div class="column">
+    <img class="myImg" src="aboutme/10.jpg" alt="When party was Ended = =">
+    <img class="myImg" src="aboutme/11.jpg" alt="PhotoBomB!!! ^^">
+    <img class="myImg" src="aboutme/13.jpg" alt="no comment...0////0">
+    <img class="myImg" src="aboutme/14.jpg" alt="Akumi Senpai's first concept fanart of Monster Hunter">
+   
+  </div>
+  <div class="column">
+    <img class="myImg" src="aboutme/15.jpg" alt="Hahahahaha">
+    <img class="myImg" src="aboutme/17.png" alt="My guardian ^^">
+    <img class="myImg" src="aboutme/12.jpg" alt="Sensei was fallen >_<">
+     <img class="myImg" src="aboutme/5.jpg" alt="The cool moment of Dragonmon Senpai">
+    
+  </div>
+  
+</div>
+
+	</div>
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+
+<script>
+    // Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = $('.myImg');
+var modalImg = $("#img01");
+var captionText = document.getElementById("caption");
+$('.myImg').click(function(){
+    modal.style.display = "block";
+    var newSrc = this.src;
+    modalImg.attr('src', newSrc);
+    captionText.innerHTML = this.alt;
+});
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+
+
+
+<div id="box1" class="box blurred-bg" style="width: 700px;height: 90px;top: 1990px;left: 325px;">
+  <div class="content">
+    <h1 class="mhfont">Senpai and Sensei Gameplay Moment</h1>	
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="box1" class="box blurred-bg" style="width:1100px;height: 880px;top:2090px;left: 120px;">
+  <div class="content">
+    <div class="container">
+  <div class="mySlides" >
+   
+    <video  style="width:100%;height: 650px;" controls id="output1">
+  <source src="aboutme/video/output1.mp4" type="video/mp4">
+  <source src="aboutme/video/output1.ogg" type="video/ogg">
+</video>
+  </div>
+
+  <div class="mySlides">
+    
+    <video  style="width:100%;height: 650px;" controls id="output2">
+  <source src="aboutme/video/output2.mp4" type="video/mp4">
+  <source src="aboutme/video/output2.ogg" type="video/ogg">
+</video>
+  </div>
+
+  <div class="mySlides">
+   
+    <video  style="width:100%;height: 650px;" controls id="output3">
+  <source src="aboutme/video/output3.mp4" type="video/mp4">
+  <source src="aboutme/video/output3.ogg" type="video/ogg">
+</video>
+  </div>
+    
+  <div class="mySlides">
+   
+    <video  style="width:100%;height: 650px;" controls id="output4">
+  <source src="aboutme/video/output4.mp4" type="video/mp4">
+  <source src="aboutme/video/output4.ogg" type="video/ogg">
+</video>
+  </div>
+
+
+
+  <div class="row">
+    <div class="column" id="stopfunction">
+    <img class="demo cursor" src="aboutme/video/output1.jpg" style="width:100%" onclick="currentSlide(1);pauseVid2();pauseVid3();pauseVid4();pauseVid5();pauseVid6()" alt="Monster Hunter Fountier Z Trailer">
+   
+    </div>
+    <div class="column" id="stopfunction">
+      <img class="demo cursor" src="aboutme/video/output2.jpg" style="width:100%" onclick="currentSlide(2);pauseVid1();pauseVid3();pauseVid4();pauseVid5();pauseVid6()" alt="Snow Miku Collaboration PV">
+      
+    </div>
+    <div class="column" id="stopfunction">
+      <img class="demo cursor" src="aboutme/video/output3.jpg" style="width:100%" onclick="currentSlide(3);pauseVid1();pauseVid2();pauseVid4();pauseVid5();pauseVid6()" alt="Weapon Introduction">
+      
+    </div>
+    <div class="column" id="stopfunction">
+      <img class="demo cursor" src="aboutme/video/output4.jpg" style="width:100%" onclick="currentSlide(4);pauseVid1();pauseVid2();pauseVid3();pauseVid5();pauseVid6()" alt="Monster Introduction">
+      
+    </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+
+<script>
+	
+	var video1= document.getElementById("output1"); 
+function pauseVid1() { 
+    video1.pause(); 
+};
+var video2= document.getElementById("output2"); 
+function pauseVid2() { 
+    video2.pause(); 
+};
+var video3= document.getElementById("output3"); 
+function pauseVid3() { 
+    video3.pause(); 
+};
+var video4= document.getElementById("output4"); 
+function pauseVid4() { 
+    video4.pause(); 
+};
+
+</script>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+	</script>
+<!-- footer -->
+<div class="footer">
+	<p>Copyright &copy;2018 southern</p>
+</div>
+
+</body>
+</html>

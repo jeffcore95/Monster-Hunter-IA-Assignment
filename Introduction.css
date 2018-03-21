@@ -1,0 +1,164 @@
+bdo
+{
+	font-size: 25px;
+	text-decoration: none;
+    font-family: Monster hunter;
+}
+body
+{
+	background-image:url("background/monster.jpg"); 
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	position: absolute;
+	text-align: center;color: white;
+}
+ .mhfont
+{
+    text-decoration: none;
+    font-family: Monster hunter;
+}
+
+		
+/*alignment of picture and details*/
+.sidebar a
+{
+	position: fixed;
+	bottom: 2%;
+	right: 3%;
+	transition: all 0.6s ease;
+	text-decoration: none;
+	color: white;
+}
+.sidebar a:hover
+{
+	background-color:grey;
+	color: black;
+
+}
+
+.weaponicon
+{
+	width: 100px;
+	transition: all 0.6s ease
+}
+
+.weaponicon:hover
+{
+	background-color:grey;
+}
+
+#show1,#show2,#show3,#show4,#show5,#show6,#show7,#show8,#show9,#show10,#show11,#show12,#show13
+{
+	width: 60px;display:none;padding: 16px;
+  transition: all 0.6s ease
+}
+
+#show1:hover,#show2:hover,#show3:hover,#show4:hover,#show5:hover,#show6:hover,#show7:hover,#show8:hover,#show9:hover,#show10:hover,#show11:hover,#show12:hover,#show13:hover
+{
+	background-color:grey;
+}
+
+
+#output1,#output2,#output3,#output4,#output5,#output6,#output7,#output8,#output9,#output10,#output11,#output12,#output13
+{
+	display:none;
+}
+
+#pic_greatsword{width: 80%;height: 500px;display: block;margin-left: 150px;margin-bottom: 30px;position:absolute;margin-top:-20px;}
+#greatsword{border: 4px solid grey;width: 600px;height:250px;background-color: grey;margin-left: 170px; color: black;}
+#pic_longsword{width: 80%;height: 500px;display: block;margin-left:250px;  margin-top: -120px;position:absolute;}
+#longsword{border: 4px solid grey;width: 600px;height:250px;background-color: grey;margin-left: 170px;color: black;
+			margin-top: 400px;margin-bottom: 300px;}
+#pic_sns{width: 80%;height: 500px;display: block;margin-left:50px;  margin-top: -120px;position:absolute;}
+#sns{border: 4px solid grey;width: 600px;height:250px;background-color: grey;margin-left: 600px;color: black;
+			margin-top: 250px;margin-bottom: 300px;}
+#pic_dualblade{width: 50%;height: 500px;display: block;margin-left:50px;  margin-top: -120px;position:absolute}
+#dualblade{border: 4px solid grey;width: 600px;height:210px;background-color: grey;margin-left: 600px;color: black;
+			margin-top: 250px;margin-bottom: 400px;}
+#pic_hammer{width: 80%;height: 700px;display: block;margin-left:400px;  margin-top:-120px;position:absolute;}
+#hammer{border: 4px solid grey;width: 600px;height:250px;background-color: grey;margin-left: 170px;color: black;
+			margin-top:207px;}
+#pic_huntinghorn{width: 70%;height: 600px;display: block;margin-left:350px;  margin-top:-280px;position:absolute;}
+#huntinghorn{border: 4px solid grey;width: 600px;height:250px;background-color: grey;margin-left: 170px;color: black;
+			margin-top:387px;margin-bottom: 200px;}	
+#pic_longspear{width: 80%;height: 500px;display: block;margin-left: 100px;margin-bottom: 30px;margin-top: -97px;position:absolute;}	
+#longspear{border: 4px solid grey;width: 600px;height:250px;background-color: grey;margin-left: 600px;color: black;
+			margin-top: 70px;margin-bottom: 400px;}
+#pic_gunlance{width: 80%;height: 700px;display: block;margin-left: 110px;margin-bottom: 30px;position:absolute;margin-top: -350px}
+#gunlance{border: 4px solid grey;width: 600px;height:250px;background-color: grey;margin-left: 600px;color: black;
+			margin-top: 340px;margin-bottom: 300px;}
+#pic_chargeblade{width: 80%;height: 700px;display: block;margin-left: 200px;margin-bottom: 30px;position:absolute;margin-top: -230px;}
+#chargeblade{border: 4px solid grey;width: 600px;height:200px;background-color: grey;margin-left: 170px;color: black;
+			margin-top: 150px;}
+#pic_switchaxe{width: 80%;height:700px;display: block;margin-left: 190px;margin-top: -180px;position:absolute;}
+#switchaxe{border: 4px solid grey;width: 600px;height:250px;background-color: grey;margin-left: 170px;color: black;
+			margin-top: 300px;}
+#pic_lbg{width: 47%;height: 700px;display: block;margin-left: 30px;margin-top:-210px;position:absolute;}
+#lbg{border: 4px solid grey;width: 600px;height:270px;background-color: grey;margin-left: 600px;color: black;
+			margin-top: 350px;}
+#pic_hbg{width: 60%;height: 700px;display: block;margin-left: 30px;margin-top:-210px;position:absolute;}
+#hbg{border: 4px solid grey;width: 600px;height:270px;background-color: grey;margin-left: 600px;color: black;
+			margin-top: 400px}
+#pic_bow{width: 80%;height: 600px;display: block;margin-left: -90px;margin-top:-220px;position:absolute;}
+#bow{border: 4px solid grey;width: 600px;height:270px;background-color: grey;margin-left: 600px;color: black;
+			margin-top: 423px}
+.topnav
+{
+	overflow: hidden;
+	background-color: black; 
+	width: 100%;
+}
+.topnav a
+{
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 22px;
+}
+.topnav a:hover
+{
+	background-color: grey;
+	color:white;
+}
+.topnav .icon
+{
+	display: none;
+}
+
+.footer
+{
+	background-color: black;
+	text-align: center;
+	clear: both;
+	padding: 3px;
+	margin: -8px;
+	position: bottom;
+	right: 0;
+	bottom: 0;
+	left: 0;	
+	margin-top: 200px;
+}
+
+@media only screen and (max-width: 800px)
+{
+	.showcase
+	{
+		display:none;
+	}
+	.weaponicon
+	{
+		display:none;
+	}
+	#show1,#show2,#show3,#show4,#show5,#show6,#show7,#show8,#show9,#show10,#show11,#show12,#show13
+	{
+		display:inline;
+	}
+	.sidebar
+	{
+		display: none;
+	}
+}

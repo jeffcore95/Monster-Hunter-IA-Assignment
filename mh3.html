@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" type="text/css" href="My Webpage.css">
+  <link rel="stylesheet"  href="Monster hunter type 2.ttf">
+</head>
+</head>
+<body>
+  
+  
+<div class="topnav" id="mytopnav">
+    
+      <a href="My webpage.html" class="mhfont">Home</a>
+      <a href="Introduction.html" class="mhfont">Introduction</a>
+      <a href="gallary.html" class="mhfont">Gallery</a>
+      <a href="about me.html" class="mhfont">About Me</a>
+</div>
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
+.mhfont
+{
+  text-decoration: none;
+  font-family: Monster hunter;
+}
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;width: 80%;margin-left: auto;
+  margin-right: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.prev
+{
+  left: 0;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+  position: relative;
+
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+#timedisplay
+{
+  position: absolute;
+    right: 0%;
+    bottom: 0.1%;
+    background-color: black;
+    font-size:1vw;
+    height: 20%;
+    width: 25%;
+
+
+}
+
+</style>
+<body>
+
+<h1 style="text-align:center" class="mhfont">Game Info of Monster Hunter 3 Ultimate</h1>
+
+<div class="container">
+  <div class="mySlides" >
+    <div class="numbertext">1 / 6</div>
+    <video  style="width:100%" controls id="output1">
+  <source src="source/mh3u/pv1.mp4" type="video/mp4">
+  <source src="source/mh3u/pv1.ogg" type="video/ogg">
+</video>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <video  style="width:100%" controls id="output2">
+  <source src="source/mh3u/newbieguide.mp4" type="video/mp4">
+  <source src="source/mh3u/newbieguide.ogg" type="video/ogg">
+</video>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <video  style="width:100%" controls id="output3">
+  <source src="source/mh3u/intro.mp4" type="video/mp4">
+  <source src="source/mh3u/intro.ogg" type="video/ogg">
+</video>
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <video  style="width:100%" controls id="output4">
+  <source src="source/mh3u/intro1.mp4" type="video/mp4">
+  <source src="source/mh3u/intro1.ogg" type="video/ogg">
+</video>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <video  style="width:100%" controls id="output5">
+  <source src="source/mh3u/weapon intro.mp4" type="video/mp4">
+  <source src="source/mh3u/weapon intro.ogg" type="video/ogg">
+</video>
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <video  style="width:100%" controls id="output6">
+  <source src="source/mh3u/stupidity.mp4" type="video/mp4">
+  <source src="source/mh3u/stupidity.ogg" type="video/ogg">
+</video>
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1);pauseVid1();pauseVid2();pauseVid3();pauseVid4();pauseVid5();pauseVid6()">&#10094;</a>
+  <a class="next" onclick="plusSlides(1);pauseVid1();pauseVid2();pauseVid3();pauseVid4();pauseVid5();pauseVid6()">&#10095;</a>
+
+
+<script>
+var video1= document.getElementById("output1"); 
+function pauseVid1() { 
+    video1.pause(); 
+};
+var video2= document.getElementById("output2"); 
+function pauseVid2() { 
+    video2.pause(); 
+};
+var video3= document.getElementById("output3"); 
+function pauseVid3() { 
+    video3.pause(); 
+};
+var video4= document.getElementById("output4"); 
+function pauseVid4() { 
+    video4.pause(); 
+};
+var video5= document.getElementById("output5"); 
+function pauseVid5() { 
+    video5.pause(); 
+};
+var video6= document.getElementById("output6"); 
+function pauseVid6() { 
+    video6.pause(); 
+};
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column" id="stopfunction">
+    <img class="demo cursor" src="source/mh3u/pv1.png" style="width:100%" onclick="currentSlide(1);pauseVid2();pauseVid3();pauseVid4();pauseVid5();pauseVid6()" alt="Monster Hunter 3 Ultimate Trailer">
+    <div id="timedisplay"><p">1:17</p></div>
+    </div>
+    <div class="column" id="stopfunction">
+      <img class="demo cursor" src="source/mh3u/newbieguide.png" style="width:100%" onclick="currentSlide(2);pauseVid1();pauseVid3();pauseVid4();pauseVid5();pauseVid6()" alt="Newbie Hunter Cha-Cha guidence">
+      <div id="timedisplay"><p">8:30</p></div>
+    </div>
+    <div class="column" id="stopfunction">
+      <img class="demo cursor" src="source/mh3u/intro.png" style="width:100%" onclick="currentSlide(3);pauseVid1();pauseVid2();pauseVid4();pauseVid5();pauseVid6()" alt="Introduction of Gameplay">
+      <div id="timedisplay"><p">3:43</p></div>
+    </div>
+    <div class="column" id="stopfunction">
+      <img class="demo cursor" src="source/mh3u/intro1.png" style="width:100%" onclick="currentSlide(4);pauseVid1();pauseVid2();pauseVid3();pauseVid5();pauseVid6()" alt="Function Explain in Gameplay">
+      <div id="timedisplay"><p">5:05</p></div>
+    </div>
+    <div class="column" id="stopfunction">
+      <img class="demo cursor" src="source/mh3u/weapon intro.png" style="width:100%" onclick="currentSlide(5);pauseVid1();pauseVid2();pauseVid3();pauseVid4();pauseVid6()" alt="Weapon Introduction">
+      <div id="timedisplay"><p">7:00</p></div>
+    </div>    
+    <div class="column" id="stopfunction">
+      <img class="demo cursor" src="source/mh3u/stupidity.png" style="width:100%" onclick="currentSlide(6);pauseVid1();pauseVid2();pauseVid3();pauseVid4();pauseVid5()" alt="Funny Moment in Gameplay">
+      <div id="timedisplay"><p">4:46</p></div>
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<div style="text-align: left;width:80%;margin-left: auto;margin-right: auto;" >
+<h3 class="mhfont">Discover the world of Monster Hunter 3 Ultimate<br>
+Battle larger-than-life monsters<br>
+Create tons of weapons and armor</h3>
+<p>Discover the epic world of Monster Hunter as you journey through more than 200 exhilarating quests, battle larger-than-life monsters and create hundreds of weapons and armor.<br><br>Don't hunt alone! Hunt with your two AI companions in single player quests or team up with up to 3 players via local connection. A fully customizable touch screen allows you to personalize your hunting experience and local Nintendo 3DS search feature allows you to find other hunters near you location. Nintendo StreetPass&trade; functionality gives you the ability to share you guild card with fellow hunters.</p>
+</div>
+  <div class="footer">
+    <p>Copyright &copy;2018 southern</p>
+  </div>
+</div>
+
+</body>
+</html>

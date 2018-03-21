@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet"  href="Monster hunter type 2.ttf">
+	<meta charset="UTF-8">
+	 <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+	 <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
+</head>
+<body>
+	<style>
+	.mhfont
+{
+	text-decoration: none;
+	font-family: Monster hunter;
+}
+		
+		@import url(https://fonts.googleapis.com/css?family=Raleway:100,400,700);
+body {
+  background-image: url("background/latest.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Raleway, Open Sans, Droid Sans, Roboto,arial, sans-serif;
+  
+}
+
+.blurred-bg {
+  background-image: url("background/latest2.jpg");
+  background-repeat: no-repeat;
+  
+  background-size: cover;
+  background-attachment: fixed;
+  
+}
+
+.box {
+  width: 400px;
+  height: 300px;
+  left: -webkit-calc( 50% - 250px );
+  top: 20%;
+  position: absolute;
+  border-radius: 5px;
+  -moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  text-align: center;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+  display: flex;
+  transition: box-shadow .3s ease;
+}
+.box:active {
+  cursor: move;
+  -moz-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
+}
+.box .content {
+  margin: auto;
+}
+
+h1, h2, a, p {
+  color: white;
+  font-weight: 100;
+}
+.tinted h1, .tinted h2, .tinted a, .tinted p {
+  color: black;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);
+}
+
+h2 {
+  font-size: 14px;
+}
+
+p {
+  margin: 20px;
+}
+p.related {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #444;
+}
+p.related a {
+  font-weight: 700;
+  text-decoration: none;
+}
+p.related a:hover {
+  text-decoration: underline;
+}
+.topnav
+{
+	overflow: hidden;
+	background-color: black; 
+
+}
+.topnav a
+{
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 22px;
+}
+.topnav a:hover
+{
+	background-color: grey;
+	color:white;
+}
+.footer
+{
+	background-color: black;
+	text-align: center;
+	clear: both;
+	padding: 3px;
+	margin: -8px;
+	right: 0;
+	left: 0;
+	top: 2950px;
+	position:absolute;	
+}
+
+
+
+
+
+
+
+	</style>
+
+<!-- top nav -->
+
+<div class="topnav" id="mytopnav">
+		
+			<a href="My webpage.html" class="mhfont">Home</a>
+			<a href="Introduction.html" class="mhfont">Introduction</a>
+			<a href="gallary.html" class="mhfont">Gallery</a>
+			<a href="about me.html" class="mhfont">About Me</a>
+</div>
+
+<!-- row 1 -->
+
+<div id="box1" class="box blurred-bg" style="width: 700px;height: 200px;top: 90px;left: 325px;">
+  <div class="content">
+    <h1 class="mhfont">Useful Items</h1>
+	    <p style="text-align: left">When going up against strong monsters, having various items at your disposal is just as important as having knowledge and skills. Here's a list of a few of the items that will be available to you.</p>
+  </div>
+</div>
+
+<!-- row 2 -->
+
+<div id="box1" class="box blurred-bg" style="height:330px;left: 10px;top: 330px;">
+  <div class="content">
+    <h1 class="mhfont">Potion</h1>
+	    <img src="icon/potion.png" style="width: 100px;">
+    	<p style="text-align: left">Restores some of your hunter's Health. Potions are essential items when hunting, so make sure you're always fully-stocked when going out on a Quest.</p>
+  </div>
+</div>
+
+<div id="box1" class="box blurred-bg" style="height:330px;right: 10px;top: 330px;">
+  <div class="content">
+    <h1 class="mhfont">Hot Drink</h1>
+	    <img src="icon/hotdrink.png" style="width: 100px;">
+    	<p style="text-align: left">Provides relief from extreme cold and stops Stamina loss. Bring some of these before venturing into cold areas.</p>
+  </div>
+</div>
+
+<div id="box1" class="box blurred-bg" style="height:330px;left: 468px;top: 330px;">
+  <div class="content">
+    <h1 class="mhfont">Cool Drink</h1>
+	    <img src="icon/colddrink.png" style="width: 100px;">
+    	<p style="text-align: left">Provides relief from extreme heat and stops Health from dropping. Bring some of these before venturing into hot areas.</p>
+  </div>
+</div>
+
+
+<!-- row 3 -->
+
+<div id="box1" class="box blurred-bg" style="height:330px;left: 10px;top: 750px;width: 600px;">
+  <div class="content">
+    <h1 class="mhfont">Whetstone</h1>
+	    <img src="icon/whetstone.png" style="width: 100px;">
+    	<p style="text-align: left">Restores Sharpness to melee weapons. Repeatedly using melee weapons will dull their Sharpness, so sharpen them regularly.</p>
+  </div>
+</div>
+
+
+<div id="box1" class="box blurred-bg" style="height:330px;right: 10px;top: 750px;width: 600px;">
+  <div class="content">
+    <h1 class="mhfont">Well-done Steak</h1>
+	    <img src="icon/meat.png" style="width: 100px;">
+    	<p style="text-align: left">Replenishes a hunter's Stamina and can also be used to recover from the Bleeding status effect.</p>
+  </div>
+</div>
+
+<!-- row 4 -->
+
+<div id="box1" class="box blurred-bg" style="height:330px;left: 10px;top: 1170px;width: 600px;">
+  <div class="content">
+    <h1 class="mhfont">Barrel Bombs/Large Barrel Bombs</h1>
+	    <img src="icon/smallbarrel.png" style="width: 100px;">
+	    <img src="icon/bigbarrel.png" style="width: 100px;">
+    	<p style="text-align: left">You can do lots of damage to monsters by using Barrel Bombs. But be careful where you set them; your fellow hunters can take damage if they're caught in the blast radius. There are two types of barrel bombs: a smaller type that detonates after a certain period of time, and a larger type that detonates upon impact.</p>
+  </div>
+</div>
+
+<div id="box1" class="box blurred-bg" style="height:330px;right: 10px;top: 1170px;width: 600px;">
+  <div class="content">
+    <h1 class="mhfont">Shock/Pitfall Traps</h1>
+	    <img src="icon/shocktrap.png" style="width: 100px;">
+	    <img src="icon/pitfalltrap.png" style="width: 100px;">
+    	<p style="text-align: left">Traps that are used to temporarily immobilize monsters. These traps don't always work, however. They cannot be used on certain terrain, and their efficacy varies depending on the type of monster that enters the trap and the monster's condition at the time.</p>
+  </div>
+</div>
+
+
+<!-- row 5 -->
+
+<div id="box1" class="box blurred-bg" style="height:330px;left: 10px;top: 1590px;">
+	<div class="content">
+  	<h1 class="mhfont">Paintball</h1>
+	    <img src="icon/paintball.png" style="width: 100px;">
+    	<p style="text-align: left">A monster's location will be displayed on the map for a set time if they are hit by this. Paint Shots have the same effect.</p>
+  </div>
+</div>
+
+<div id="box1" class="box blurred-bg" style="height:330px;left: 468px;top: 1590px;">
+  <div class="content">
+    <h1 class="mhfont">Flash Bomb</h1>
+	    <img src="icon/flashbomb.png" style="width: 100px;">
+    	<p style="text-align: left">Throw this at a monster's face to temporarily blind it, making it fall from the sky or otherwise giving you the opportunity to attack. However, depending on the monster, Flash Bombs might only cause it to grow more violent, instead.</p>
+  </div>
+</div>
+
+<div id="box1" class="box blurred-bg" style="height:330px;right: 10px;top: 1590px;">
+  <div class="content">
+    <h1 class="mhfont">Sonic Bomb</h1>
+	    <img src="icon/sonicbomb.png" style="width: 100px;">
+    	<p style="text-align: left">Throw this to send out a high-frequency sound that renders certain monsters defenseless. It can also be used to lure out monsters that lurk beneath the ground.</p>
+  </div>
+</div>
+
+<!-- row 6 -->
+
+
+<div id="box1" class="box blurred-bg" style="height:330px;left: 10px;top:2010px;width: 600px;">
+  <div class="content">
+    <h1 class="mhfont">Nulberry</h1>
+	    <img src="icon/nulberry.png" style="width: 100px;">
+    	<p style="text-align: left">A berry that can cure various Blights. Use a Nulberry when you are infected with the Frenzy to slow its effects.</p>
+  </div>
+</div>
+
+
+<div id="box1" class="box blurred-bg" style="height:330px;right: 10px;top:2010px;width: 600px;">
+  <div class="content">
+    <h1 class="mhfont">Affinity Oil</h1>
+	    <img src="icon/affinityoil.png" style="width: 100px;">
+    	<p style="text-align: left">A Sword & Shield-exclusive item that raises a weapon's Affinity when used.</p>
+  </div>
+</div>
+
+
+<!-- row 7 -->
+
+<div id="box1" class="box blurred-bg" style="height:430px;left: 70px;top:2430px;width: 1200px;">
+  <div class="content">
+    <h1 class="mhfont">Giving and Receiving Items</h1>
+	    <img src="icon/pic1.jpg" style="width: 400px;">
+	    <img src="icon/pic2.jpg" style="width: 400px;">
+    	<p style="text-align: left">You can give or receive items during Multiplayer that have a Rarity of 3 or lower.
+From the menu, select the item you want to give from your Item Pouch, select Give, and then select the receiving player.</p>
+  </div>
+</div>
+
+
+
+
+
+<!-- footer -->
+<div class="footer">
+	<p>Copyright &copy;2018 southern</p>
+</div>
+
+</body>
+</html>

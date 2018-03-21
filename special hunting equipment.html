@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet"  href="Monster hunter type 2.ttf">
+  <meta charset="UTF-8">
+   <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
+</head>
+<body>
+  <style>
+  .mhfont
+{
+  text-decoration: none;
+  font-family: Monster hunter;
+}
+    
+    @import url(https://fonts.googleapis.com/css?family=Raleway:100,400,700);
+body {
+  background-image: url("background/latest.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Raleway, Open Sans, Droid Sans, Roboto,arial, sans-serif;
+  
+}
+
+.blurred-bg {
+  background-image: url("background/latest2.jpg");
+  background-repeat: no-repeat;
+  
+  background-size: cover;
+  background-attachment: fixed;
+  
+}
+
+.box {
+  width: 400px;
+  height: 300px;
+  left: -webkit-calc( 50% - 250px );
+  top: 20%;
+  position: absolute;
+  border-radius: 5px;
+  -moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  text-align: center;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+  display: flex;
+  transition: box-shadow .3s ease;
+}
+.box:active {
+  cursor: move;
+  -moz-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
+}
+.box .content {
+  margin: auto;
+}
+
+h1, h2, a, p {
+  color: white;
+  font-weight: 100;
+}
+.tinted h1, .tinted h2, .tinted a, .tinted p {
+  color: black;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);
+}
+
+h2 {
+  font-size: 14px;
+}
+
+p {
+  margin: 20px;
+}
+p.related {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #444;
+}
+p.related a {
+  font-weight: 700;
+  text-decoration: none;
+}
+p.related a:hover {
+  text-decoration: underline;
+}
+.topnav
+{
+  overflow: hidden;
+  background-color: black; 
+
+}
+.topnav a
+{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 22px;
+}
+.topnav a:hover
+{
+  background-color: grey;
+  color:white;
+}
+.footer
+{
+  background-color: black;
+  text-align: center;
+  clear: both;
+  padding: 3px;
+  margin: -8px;
+  right: 0;
+  left: 0;
+  top: 3400px;
+  position:absolute;  
+}
+
+
+
+
+
+
+
+  </style>
+
+<!-- top nav -->
+
+<div class="topnav" id="mytopnav">
+    
+      <a href="My webpage.html" class="mhfont">Home</a>
+      <a href="Introduction.html" class="mhfont">Introduction</a>
+      <a href="gallary.html" class="mhfont">Gallery</a>
+      <a href="about me.html" class="mhfont">About Me</a>
+</div>
+
+<!-- row 1 -->
+
+<div id="box1" class="box blurred-bg" style="width: 700px;height: 190px;top: 90px;left: 325px;">
+  <div class="content">
+    <h1 class="mhfont"><strong>Special Hunting Equipment</strong></h1>
+    <p style="text-align: left;">Whenever you encounter monsters that are larger than normal, you can use special hunting equipment to help you take them down.</p>
+  </div>
+</div>
+
+<!-- row 2 -->
+
+<div id="box1" class="box blurred-bg" style="height:290px;left: 120px;top: 370px;width: 1100px;">
+  <div class="content">
+    <img src="icon/ballista.jpg" style="width: 400px;float: left; margin-right: 20px;">
+    <h1 class="mhfont" style="text-align: left">  Ballista</h1>
+     
+      <p style="text-align: left;"><br>A giant, stationary bowgun. It is very powerful and can fire over long distances, but it requires Ballista ammo. It also has special ammo such as the One-shot Binder, which can temporarily restrain monsters.</p>
+  </div>
+</div>
+
+
+
+<div id="box1" class="box blurred-bg" style="height:100px;left: 490px;top: 750px;width: 400px;">
+  <div class="content">
+    <h1 class="mhfont"><strong>Using A Ballista</strong></h1>
+  </div>
+</div>
+
+
+
+<div id="box1" class="box blurred-bg" style="height:290px;left: 120px;top: 940px;width: 1100px;">
+  <div class="content">
+    <img src="icon/finding.jpg" style="width: 400px;float: left; margin-right: 20px;margin-left: -210px;">
+    <h1 class="mhfont" style="text-align: left">Finding and Load Ammo</h1>
+     <p style="text-align: left;"><br>Interact it the Ballista to use it. Ballista ammo can be found in the Supply Box or by gathering.</p>
+  </div>
+</div>
+
+
+
+<div id="box1" class="box blurred-bg" style="height:290px;left: 120px;top: 1320px;width: 1100px;">
+  <div class="content">
+    <img src="icon/aim.jpg" style="width: 400px;float: left; margin-right: 20px;">
+    <h1 class="mhfont" style="text-align: left">Aim and Fire!</h1>
+     <p style="text-align: left;"><br>Aim and press to fire. You can toggle between aiming styles and easy-aiming styles. You can't evade attacks while manning a Ballista, so if you sense an incoming attack, uninteract the Ballista so you can move freely.</p>
+  </div>
+</div>
+
+
+<div id="box1" class="box blurred-bg" style="height:290px;left: 120px;top: 1700px;width: 1100px;">
+  <div class="content">
+    <img src="icon/dragonator.jpg" style="width: 400px;float: left; margin-right: 20px;margin-left: -125px;">
+    <h1 class="mhfont" style="text-align: left">The Dragonator!</h1>
+     <p style="text-align: left;"><br>A gigantic mechanical lance designed to pierce through monsters. While its range is short, its power is unquestionable.</p>
+  </div>
+</div>
+
+
+<div id="box1" class="box blurred-bg" style="height:290px;left: 120px;top: 2100px;width: 1100px;">
+  <div class="content">
+    <img src="icon/switch.jpg" style="width: 400px;float: left; margin-right: 20px;">
+    <h1 class="mhfont" style="text-align: left">The Dragonator Switch</h1>
+     <p style="text-align: left;"><br>When you approach the Dragonator Switch, an icon will appear above your hunter's head. Once you have your target in your sights,interact it at just the right time to skewer it. Once you use the Dragonator, it will take a while before you can use it again, so make it count!</p>
+  </div>
+</div>
+
+
+<div id="box1" class="box blurred-bg" style="height:450px;left: 120px;top: 2490px;width: 1100px;">
+  <div class="content">
+    <h1 class="mhfont">The Fence Switch</h1>
+    <img src="icon/fence1.jpg" style="width: 400px;">
+    <img src="icon/fence2.jpg" style="width: 400px;">
+     <p style="text-align: left;"><br>Utilizing the switch on either side of the Arena will cause a fence to pop up in the middle of the Arena and split it in half. This comes in very handy when dealing with multiple monsters at the same time.</p>
+  </div>
+</div>
+
+
+<div id="box1" class="box blurred-bg" style="height:290px;left: 120px;top: 3040px;width: 1100px;">
+  <div class="content">
+    <img src="icon/fence3.jpg" style="width: 400px;float: left; margin-right: 20px;">
+    <h1 class="mhfont" style="text-align: left">The Fence Switch</h1>
+     <p style="text-align: left;"><br>An icon will appear overhead when you approach the switch. Press when this happens to use the switch to bring up the fence. This will help when fighting multiple monsters at the same time.
+After a period of time, the fence will retract into the ground. Once you use the Fence Switch, there is a cool down period before you can use it again, so use it wisely.</p>
+  </div>
+</div>
+
+
+
+
+
+<!-- footer -->
+<div class="footer">
+  <p>Copyright &copy;2018 southern</p>
+</div>
+
+</body>
+</html>

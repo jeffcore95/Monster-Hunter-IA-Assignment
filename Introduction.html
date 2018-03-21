@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="Introduction.css">
+	<link rel="stylesheet"  href="Monster hunter type 2.ttf">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+	<div>
+<div class="topnav" id="mytopnav">
+		
+			<a href="My webpage.html" class="mhfont">Home</a>
+			<a href="Introduction.html" class="mhfont">Introduction</a>
+			<a href="gallary.html" class="mhfont">Gallery</a>
+			<a href="about me.html" class="mhfont">About Me</a>
+</div>
+
+<h1 id="top" class="mhfont">INTRODUCTION OF WEAPON TYPE</h1>
+
+<div style="margin-bottom: 200px;">
+	<a href="#pic_greatsword" id="link1"><img src="icon/weapon icon/greatsword.png" class="weaponicon"></a>
+	<a href="#pic_longsword" id="link2"><img src="icon/weapon icon/longsword.png" class="weaponicon"></a>
+	<a href="#pic_sns" id="link3"><img src="icon/weapon icon/sword and shield.png" class="weaponicon"></a>
+	<a href="#pic_dualblade" id="link4"><img src="icon/weapon icon/dual blade.png" class="weaponicon"></a>
+	<a href="#pic_hammer" id="link5"><img src="icon/weapon icon/hammer.png" class="weaponicon"></a>
+	<a href="#pic_huntinghorn" id="link6"><img src="icon/weapon icon/hunting horn.png" class="weaponicon"></a>
+	<a href="#pic_longspear" id="link7"><img src="icon/weapon icon/longspear.png" class="weaponicon"></a>
+	<a href="#pic_gunlance" id="link8"><img src="icon/weapon icon/gunlance.png" class="weaponicon"></a>
+	<a href="#pic_chargeblade" id="link9"><img src="icon/weapon icon/charge blade.png" class="weaponicon"></a>
+	<a href="#pic_switchaxe" id="link10"><img src="icon/weapon icon/switch axe.png" class="weaponicon"></a>
+	<a href="#pic_lbg" id="link11"><img src="icon/weapon icon/light bow gun.png" class="weaponicon"></a>
+	<a href="#pic_hbg" id="link12"><img src="icon/weapon icon/heavy bow gun.png" class="weaponicon"></a>
+	<a href="#pic_bow" id="link13"><img src="icon/weapon icon/bow.png" class="weaponicon"></a>
+</div>
+<div class="sidebar"><a href="#top" id="bar"><h3 class="mhfont">Back<br>to<Br>Top</h3></a>
+</div>
+<script>
+$(document).ready(function(){
+ $("#link1,#link2,#link3,#link4,#link5,#link6,#link7,#link8,#link9,#link10,#link11,#link12,#link13,#bar").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();     
+      var hash = this.hash; 
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+<div>
+
+
+
+
+
+<div id="output1">
+<img src="hunter/greatsword.png" style="width: 75%">
+<div style="margin-top: 45px">
+	<h5><bdo>Great Swords</bdo> require a certain amount of experience to wield properly and master.To a novice,they may seem very slow 
+and unwieldy.However,in the hands of an experienced hunter, they can prove very useful with a very nice damage output.</h5>
+	<ul>
+		<li>Extremely powerful</li>
+		<li>Can guard against attacks</li>
+		<li>Can perform charged attacks</li>
+		<li>Long range </li>
+	</ul>
+</div>
+</div>
+
+
+
+
+
+
+<div id="output2">
+<img src="hunter/longsword.png" style="width:70%; ">
+<div style="margin-top:-10px;">
+	<h5><bdo>Long Swords</bdo> are very versatile weapons. Their handling is quite different from the Great Sword's, 
+even though they come from the same branch. Hunters will find that one can often upgrade a Great Sword into a Longsword,but almost never vice-versa.</h5>
+	<ul>
+		<li>Good power.</li>
+		<li>Great speed.</li>
+		<li>Perfect for breaking monster parts and severing tails.</li>
+		<li>Spirit gauge leads to powerful and sharp attacks.</li>
+	</ul>
+</div>
+</div>
+
+
+<div id="output3">
+<img src="hunter/sns.png" style="width: 67%;">
+<div style="margin-top:-22px;">
+	<h5><bdo>Sword and Shields</bdo> have some of the lowest average damage levels, but are extremely 
+capable in a variety of other aspects, such as inflicting status ailments.</h5>
+	<ul>
+		<li>Speedy attacks.</li>
+		<li>Guard ability.</li>
+		<li>Great elemental potential.</li>
+		<li>Able to use items while guarding.</li>
+	</ul>
+</div>
+</div>
+
+<div id="output4">
+<img src="hunter/dualblade.png" style="width:45%">
+<div style="margin-top:-6px;">
+	<h5><bdo>Dual Blades</bdo> are more than just a couple of blades to slash and maim.</h5>
+	<ul>
+		<li>Unstop inflicting attribute damage even if Sharpness decreases.</li>
+		<li>Can stack a lot of damage in a short amount of time.</li>
+		<li>Fast sheathing and agile movement. </li>
+		<li>Super fast.</li>
+	</ul>
+</div>
+</div>
+
+
+<div id="output5">
+<img src="hunter/hammer.png" style="width:90%">
+<div style="margin-top:-80px;">
+	<h5><bdo>Hammers</bdo> are sheer brute force. The best defense here is a good offense,and the 
+best strategy for a hammer is to line oneself up<br> safely while swings at vital points.</h5>
+	<ul>
+		<li>Surprisingly light when unsheathed.</li>
+		<li>Highest raw damage out of all blademaster weapons</li>
+		<li>Particularly useful charged attacks.</li>
+		<li>Can KO monsters</li>
+	</ul>
+</div>
+</div>
+
+
+<div id="output6">
+<img src="hunter/huntinghorn.png" style="width:50%">
+<div style="margin-top:-12px;">
+	<h5><bdo>Hunting Horn</bdo> is a weapon first introduced in the second generation of the 
+Monster Hunter series. It is similar to the Hammer in that it does impact damage and can stun a monster 
+when it connects with the head</h5>
+	<ul>
+		<li>Longer reach than Hammer.</li>
+		<li>Multi purpose supporting rymthm skill.</li>
+		<li>Fastest move speed in buffed mode.</li>
+		<li>Recital songs get even stronger than other.</li>
+	</ul>
+</div>
+</div>
+
+
+<div id="output7">
+<img src="hunter/longspear.png" style="width:74%">
+<div>
+	<h5><bdo>Long Spear</bdo> are powerful Weapons that should not be overlooked. They have the capacity to deal some pretty 
+decent damage.</h5>
+	<ul>
+		<li>Incredible range</li>
+		<li>Considerably good attack power.</li>
+		<li>Many lances also give defense boosts.</li>
+		<li>Most effective guard out of all blademaster weapons.</li>
+		<li>Good sharpness. </li>
+	</ul>
+</div>
+</div>
+
+
+<div id="output8">
+<img src="hunter/gunlance.png" style="width:50%">
+<div style="margin-top:-12px;">
+	<h5><bdo>Gunlances</bdo>, also known as Ganransu, are long, piercing weapons with a mechanism inside which can fire an explosive round.</h5>
+	<ul>
+		<li>Fixed shelling damage and unblockable damage.</li>
+		<li>Capable of executing a variety of relatively fluid combos by mixing up stabs and shelling.</li>
+		<li>Versatile range and attack direction, able to attack overhead.</li>
+		<li>Longest-reaching Blademaster weapons.</li>
+		<li>Excel at breaking otherwise tough-to-damage monster parts.</li>
+		</ul>
+</div>
+</div>
+
+
+<div id="output9">
+<img src="hunter/chargeblade.png" style="width:70%;margin-top: -90px;">
+<div>
+	<h5><bdo>Charge Blade</bdo> is well known for its versatility and high skill ceiling, being well applicable to a myriad of situations via its two modes</h5>
+	<ul>
+		<li>Combination of Explode and melee power.</li>
+		<li>Has two weapon mode due to adapt defferent situation.</li>
+		<li>Can unleash fatal critical continous damage.</li>
+		<li>Profesional in guard.</li>
+	</ul>
+</div>
+</div>
+
+
+<div id="output10">
+<img src="hunter/switchaxe.png"  style="width:68%">
+<div style="margin-top:-19px;">
+	<h5><bdo>Switch Axe</bdo> is powerful melee weapon, capable of such momentum that the hunter swinging it is dragged around by the momentum of each swing. Described as a marvel of technology capable of phantasmagorical might.</h5>
+	<ul>
+		<li>Quick sidesteps allow easy evading through monster attacks.</li>
+		<li>Sword Mode features built-in ESP</li>
+		<li>Can switch modes mid-combo.</li>
+		<li>All of its combos are infinite.</li>
+	</ul>
+</div>
+</div>
+
+
+<div id="output11">
+<img src="hunter/lbg.png" style="width:45%">
+<div style="margin-top:-20px;">
+	<h5><bdo>Light Bowgun</bdo> is a bowgun that allows you to move around at a normal 
+running speed. Due  its compact size, it does not come with as much firepower as its larger counterpart. Most hunters prefer light bowguns because of the fast movement and reloading speed. Light bowguns are usually 
+easy to make and master.</h5>
+	<ul>
+		<li>Faster than a heavy bowgun due to the clear weight difference.</li>
+		<li>Multi type of bullet to choose in different situation.</li>
+		<li>Wild born ranger skill.</li>
+		<li>Rapid fire.</li>
+	</ul>
+</div>
+</div>
+
+<div id="output12" >
+<img src="hunter/hbg.png" style="width:55%">
+<div style="margin-top:-15px;">
+	<h5><bdo>Heavy Bowgun</bdo> is the ranged weapon of choice for those who wish to have as much firepower as they can, while still maintaining some distance. While much slower than their Light Bowgun cousins, they are the only ranged weapon that allows a shield to be attached, giving them guard capabilities</h5>
+	<ul>
+		<li>High attack power.</li>
+		<li>Generally less deviation</li>
+		<li>Shield attachment provides an Auto-Guard option.</li>
+		<li>Larger clip sizes in general. </li>
+	</ul>
+</div>
+</div>
+
+<div id="output13">
+<img src="hunter/bow.png" style="width:74%">
+<div>
+	<h5><bdo>Bow</bdo> is one of the most tactical weapon in the Monster Hunter series. Although it is very versatile and has a widerange of options, it is not the weapon of choice for an amateur but rathera weapon of choice for a skilled hunter. </h5>
+	<ul>
+		<li>Can be imbued with numerous attributes.</li>
+		<li>Unlimited arrows unlike Bowgun's bullet.</li>
+		<li>A wide variety of arrow types, including Scatter, Rapid and Pierce</li>
+		<li>Ranged weapon, thus carries less risk than direct melee attacks that a blademaster would be involved in.</li>
+	</ul>
+</div>
+</div>
+
+
+
+
+
+</div>
+<div id="show0">
+	<img src="icon/weapon icon/greatsword.png" id="show1" style="width: 110px;">
+	<img src="icon/weapon icon/longsword.png" id="show2" style="width: 110px;">
+	<img src="icon/weapon icon/sword and shield.png" id="show3" style="width: 110px;">
+	<img src="icon/weapon icon/dual blade.png" id="show4" style="width: 110px;">
+	<img src="icon/weapon icon/hammer.png" id="show5" style="width: 110px;">
+	<img src="icon/weapon icon/hunting horn.png" id="show6" style="width: 110px;">
+	<img src="icon/weapon icon/longspear.png" id="show7" style="width: 110px;">
+	<img src="icon/weapon icon/gunlance.png" id="show8" style="width: 110px;">
+	<img src="icon/weapon icon/charge blade.png" id="show9" style="width: 110px;">
+	<img src="icon/weapon icon/switch axe.png" id="show10" style="width: 110px;">
+	<img src="icon/weapon icon/light bow gun.png" id="show11" style="width: 110px;">
+	<img src="icon/weapon icon/heavy bow gun.png" id="show12" style="width: 110px;">
+	<img src="icon/weapon icon/bow.png" id="show13" style="width: 110px;">
+
+</div>
+
+
+
+<script>
+	$(document).ready(function(){
+		$("#show1").click(function(){
+			$("#output1").slideToggle("slow");
+			$("#output2,#output3,#output4,#output5,#output6,#output7,#output8,#output9,#output10,#output11,#output12,#output13").hide();
+		})
+	});
+	$(document).ready(function(){
+		$("#show2").click(function(){
+			$("#output2").slideToggle("slow");
+			$("#output1,#output3,#output4,#output5,#output6,#output7,#output8,#output9,#output10,#output11,#output12,#output13").hide();
+		})
+	});
+	$(document).ready(function(){
+		$("#show3").click(function(){
+			$("#output3").slideToggle("slow");
+			$("#output2,#output1,#output4,#output5,#output6,#output7,#output8,#output9,#output10,#output11,#output12,#output13").hide();
+		})
+	});
+	$(document).ready(function(){
+		$("#show4").click(function(){
+			$("#output4").slideToggle("slow");
+			$("#output2,#output3,#output1,#output5,#output6,#output7,#output8,#output9,#output10,#output11,#output12,#output13").hide();
+		})
+	});
+	$(document).ready(function(){
+		$("#show5").click(function(){
+			$("#output5").slideToggle("slow");
+			$("#output2,#output3,#output4,#output1,#output6,#output7,#output8,#output9,#output10,#output11,#output12,#output13").hide();
+		})
+	});
+	$(document).ready(function(){
+		$("#show6").click(function(){
+			$("#output6").slideToggle("slow");
+			$("#output2,#output3,#output4,#output5,#output1,#output7,#output8,#output9,#output10,#output11,#output12,#output13").hide();
+		})
+	});
+	$(document).ready(function(){
+		$("#show7").click(function(){
+			$("#output7").slideToggle("slow");
+			$("#output2,#output3,#output4,#output5,#output6,#output1,#output8,#output9,#output10,#output11,#output12,#output13").hide();
+		})
+	});
+	$(document).ready(function(){
+		$("#show8").click(function(){
+			$("#output8").slideToggle("slow");
+			$("#output2,#output3,#output4,#output5,#output6,#output7,#output1,#output9,#output10,#output11,#output12,#output13").hide();
+		})
+	});
+	$(document).ready(function(){
+		$("#show9").click(function(){
+			$("#output9").slideToggle("slow");
+			$("#output2,#output3,#output4,#output5,#output6,#output7,#output8,#output1,#output10,#output11,#output12,#output13").hide();
+		})
+	});
+	$(document).ready(function(){
+		$("#show10").click(function(){
+			$("#output10").slideToggle("slow");
+			$("#output2,#output3,#output4,#output5,#output6,#output7,#output8,#output9,#output1,#output11,#output12,#output13").hide();
+		})
+	});
+	$(document).ready(function(){
+		$("#show11").click(function(){
+			$("#output11").slideToggle("slow");
+			$("#output2,#output3,#output4,#output5,#output6,#output7,#output8,#output9,#output10,#output1,#output12,#output13").hide();
+		})
+	});
+	$(document).ready(function(){
+		$("#show12").click(function(){
+			$("#output12").slideToggle("slow");
+			$("#output2,#output3,#output4,#output5,#output6,#output7,#output8,#output9,#output10,#output11,#output1,#output13").hide();
+		})
+	});
+	$(document).ready(function(){
+		$("#show13").click(function(){
+			$("#output13").slideToggle("slow");
+			$("#output2,#output3,#output4,#output5,#output6,#output7,#output8,#output9,#output10,#output11,#output12,#output1").hide();
+		})
+	});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="showcase" id="linksubject1">
+<img id="pic_greatsword" src="hunter/greatsword.png">
+<div id="greatsword">
+	<h5><bdo>Great Swords</bdo> require a certain amount of experience to wield properly and master.To a novice,they may seem very slow 
+and unwieldy.However,in the hands of an experienced hunter, they can prove very useful with a very nice damage output.</h5>
+	<ul>
+		<li>Extremely powerful</li>
+		<li>Can guard against attacks</li>
+		<li>Can perform charged attacks</li>
+		<li>Long range </li>
+	</ul>
+</div>
+</div>
+
+<div class="showcase" id="linksubject2">
+<img id="pic_longsword" src="hunter/longsword.png" style="z-index:-2">
+<div id="longsword">
+	<h5><bdo>Long Swords</bdo> are very versatile weapons. Their handling is quite different from the Great Sword's, 
+even though they come from the same branch. Hunters will find that one can often upgrade a Great Sword into a Longsword,but almost never vice-versa.</h5>
+	<ul>
+		<li>Good power.</li>
+		<li>Great speed.</li>
+		<li>Perfect for breaking monster parts and severing tails.</li>
+		<li>Spirit gauge leads to powerful and sharp attacks.</li>
+	</ul>
+</div>
+</div>
+
+<div class="showcase" id="linksubject3">
+<img id="pic_sns" src="hunter/sns.png">
+<div id="sns">
+	<h5><bdo>Sword and Shields</bdo> have some of the lowest average damage levels, but are extremely 
+capable in a variety of other aspects, such as inflicting status ailments.</h5>
+	<ul>
+		<li>Speedy attacks.</li>
+		<li>Guard ability.</li>
+		<li>Great elemental potential.</li>
+		<li>Able to use items while guarding.</li>
+	</ul>
+</div>
+</div>
+
+<div class="showcase" id="linksubject4">
+<img id="pic_dualblade" src="hunter/dualblade.png" style="z-index:-2">
+<div id="dualblade">
+	<h5><bdo>Dual Blades</bdo> are more than just a couple of blades to slash and maim.</h5>
+	<ul>
+		<li>Unstop inflicting attribute damage even if Sharpness decreases.</li>
+		<li>Can stack a lot of damage in a short amount of time.</li>
+		<li>Fast sheathing and agile movement. </li>
+		<li>Super fast.</li>
+	</ul>
+</div>
+</div>
+
+<div class="showcase" id="linksubject5">
+<img id="pic_hammer" src="hunter/hammer.png">
+<div id="hammer">
+	<h5><bdo>Hammers</bdo> are sheer brute force. The best defense here is a good offense,and the 
+best strategy for a hammer is to line oneself up<br> safely while swings at vital points.</h5>
+	<ul>
+		<li>Surprisingly light when unsheathed.</li>
+		<li>Highest raw damage out of all blademaster weapons</li>
+		<li>Particularly useful charged attacks.</li>
+		<li>Can KO monsters</li>
+	</ul>
+</div>
+</div>
+
+<div class="showcase" id="linksubject6">
+<img id="pic_huntinghorn" src="hunter/huntinghorn.png">
+<div id="huntinghorn">
+	<h5><bdo>Hunting Horn</bdo> is a weapon first introduced in the second generation of the 
+Monster Hunter series. It is similar to the Hammer in that it does impact damage and can stun a monster 
+when it connects with the head</h5>
+	<ul>
+		<li>Longer reach than Hammer.</li>
+		<li>Multi purpose supporting rymthm skill.</li>
+		<li>Fastest move speed in buffed mode.</li>
+		<li>Recital songs get even stronger than other.</li>
+	</ul>
+</div>
+</div>
+
+<div class="showcase" id="linksubject7">
+<img id="pic_longspear" src="hunter/longspear.png">
+<div id="longspear">
+	<h5><bdo>Long Spear</bdo> are powerful Weapons that should not be overlooked. They have the capacity to deal some pretty 
+decent damage.</h5>
+	<ul>
+		<li>Incredible range</li>
+		<li>Considerably good attack power.</li>
+		<li>Many lances also give defense boosts.</li>
+		<li>Most effective guard out of all blademaster weapons.</li>
+		<li>Good sharpness. </li>
+	</ul>
+</div>
+</div>
+
+<div class="showcase" id="linksubject8">
+<img id="pic_gunlance" src="hunter/gunlance.png">
+<div id="gunlance">
+	<h5><bdo>Gunlances</bdo>, also known as Ganransu, are long, piercing weapons with a mechanism inside which can fire an explosive round.</h5>
+	<ul>
+		<li>Fixed shelling damage and unblockable damage.</li>
+		<li>Capable of executing a variety of relatively fluid combos by mixing up stabs and shelling.</li>
+		<li>Versatile range and attack direction, able to attack overhead.</li>
+		<li>Longest-reaching Blademaster weapons.</li>
+		<li>Excel at breaking otherwise tough-to-damage monster parts.</li>
+		</ul>
+</div>
+</div>
+
+<div class="showcase" id="linksubject9">
+<img id="pic_chargeblade" src="hunter/chargeblade.png">
+<div id="chargeblade">
+	<h5><bdo>Charge Blade</bdo> is well known for its versatility and high skill ceiling, being well applicable to a myriad of situations via its two modes</h5>
+	<ul>
+		<li>Combination of Explode and melee power.</li>
+		<li>Has two weapon mode due to adapt defferent situation.</li>
+		<li>Can unleash fatal critical continous damage.</li>
+		<li>Profesional in guard.</li>
+	</ul>
+</div>
+</div>
+
+<div class="showcase" id="linksubject10">
+<img id="pic_switchaxe" src="hunter/switchaxe.png" style="z-index:-2">
+<div id="switchaxe">
+	<h5><bdo>Switch Axe</bdo> is powerful melee weapon, capable of such momentum that the hunter swinging it is dragged around by the momentum of each swing. Described as a marvel of technology capable of phantasmagorical might.</h5>
+	<ul>
+		<li>Quick sidesteps allow easy evading through monster attacks.</li>
+		<li>Sword Mode features built-in ESP</li>
+		<li>Can switch modes mid-combo.</li>
+		<li>All of its combos are infinite.</li>
+	</ul>
+</div>
+</div>
+
+<div class="showcase" id="linksubject11">
+<img id="pic_lbg" src="hunter/lbg.png">
+<div id="lbg">
+	<h5><bdo>Light Bowgun</bdo> is a bowgun that allows you to move around at a normal 
+running speed. Due  its compact size, it does not come with as much firepower as its larger counterpart. Most hunters prefer light bowguns because of the fast movement and reloading speed. Light bowguns are usually 
+easy to make and master.</h5>
+	<ul>
+		<li>Faster than a heavy bowgun due to the clear weight difference.</li>
+		<li>Multi type of bullet to choose in different situation.</li>
+		<li>Wild born ranger skill.</li>
+		<li>Rapid fire.</li>
+	</ul>
+</div>
+</div>
+
+<div class="showcase" id="linksubject12">
+<img id="pic_hbg" src="hunter/hbg.png">
+<div id="hbg">
+	<h5><bdo>Heavy Bowgun</bdo> is the ranged weapon of choice for those who wish to have as much firepower as they can, while still maintaining some distance. While much slower than their Light Bowgun cousins, they are the only ranged weapon that allows a shield to be attached, giving them guard capabilities</h5>
+	<ul>
+		<li>High attack power.</li>
+		<li>Generally less deviation</li>
+		<li>Shield attachment provides an Auto-Guard option.</li>
+		<li>Larger clip sizes in general. </li>
+	</ul>
+</div>
+</div>
+
+<div class="showcase" id="linksubject13">
+<img id="pic_bow" src="hunter/bow.png">
+<div id="bow">
+	<h5><bdo>Bow</bdo> is one of the most tactical weapon in the Monster Hunter series. Although it is very versatile and has a widerange of options, it is not the weapon of choice for an amateur but rathera weapon of choice for a skilled hunter. </h5>
+	<ul>
+		<li>Can be imbued with numerous attributes.</li>
+		<li>Unlimited arrows unlike Bowgun's bullet.</li>
+		<li>A wide variety of arrow types, including Scatter, Rapid and Pierce</li>
+		<li>Ranged weapon, thus carries less risk than direct melee attacks that a blademaster would be involved in.</li>
+	</ul>
+</div>
+</div>
+
+
+<div class="footer">
+		<p>Copyright &copy;2018 southern</p>
+	</div>
+
+</div>
+</body>
+</html>
