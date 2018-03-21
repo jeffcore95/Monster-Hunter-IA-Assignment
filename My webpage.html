@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" type="text/css" href="My Webpage.css">
+	<link rel="stylesheet"  href="Monster hunter type 2.ttf">
+</head>
+
+<body>
+	
+<style>
+
+.mhfont
+{
+	text-decoration: none;
+	font-family: Monster hunter;
+}
+	
+</style>	
+<div class="topnav" id="mytopnav">
+		
+			<a href="My webpage.html" class="mhfont">Home</a>
+			<a href="Introduction.html" class="mhfont">Introduction</a>
+			<a href="gallary.html" class="mhfont">Gallery</a>
+			<a href="about me.html" class="mhfont">About Me</a>
+</div>
+<div class="container">
+	<div class="left">
+		<div>
+		<a href="mh3.html"><img class="cat" src="icon/meow sport.png" style="width: 170%; height:150%"></a>
+		<h4 class="mhfont">Click me for the detail of Monster Hunter 3 Ultimate!</h4></div>
+		<div class="sidecontainer">
+			<img class="bar" src="background/background.jpg" style="width: 100%">
+			<div class="textimg">
+				<h2 class="mhfont">Getting Started</h2>
+					<p><a href="useful item.html">Useful Item</a></p>
+					<p><a href="ability changes.html">Ability Changes</a></p>
+					<p><a href="other abnormal statuses.html">Other Abnormal Statuses</a></p>
+					<p><a href="gathering.html">Gathering/Carving</a></p>
+					<p><a href="weaponandarmor.html">Weapons and Armor</a></p>
+					<p><a href="equipment statuses.html">Equipment Statuses</a></p>
+			</div>
+		</div>
+	</div>
+	<div class="body">
+		<h1 style="text-align: center;" class="mhfont">Welcome to the world of Monster Hunter</h1>
+		<div class="w3-content w3-section">
+		<img id="pic1" class="mySlides w3-animate-left" src="pic/New folder/135690.jpg">
+		<img id="pic1" class="mySlides w3-animate-right" src="pic/New folder/485469.jpg">
+		<img id="pic1" class="mySlides w3-animate-left" src="pic/New folder/135703.jpg">
+		<img id="pic1" class="mySlides w3-animate-right" src="pic/New folder/173902.jpg">
+		<div style="width: 90%;margin-left: auto;margin-right: auto;">
+		<h2 class="mhfont">Gameplay</h2>
+		<p>Monster Hunter games are action role-playing games, set in a fantasy genre. Players take the role of a Hunter that serves to help protect a village or help research the large monsters that roam the various areas near the village. This is generally presented through a series of quests to slay or trap a monster, but can include numerous optional challenges.<br><br>
+		The core feature of Monster Hunter is its compulsion loop. A player's Hunter does not grow as in traditional computer role-playing games, and has no intrinsic attributes. Instead, the Hunter's abilities are defined by what equipment they select prior to leaving on a mission. The games have more than ten weapon archetypes, such as sword, axe, and bow, each with various combat abilities, and a vast array of specific weapons that provide attack power and the ability to inflict elemental or status effects on a monster.<br><br>Multiple pieces of armor can be worn, providing defensive value, providing resistances to certain types of attacks or status effects, and additional skills that boost the Hunter's attributes while in the field. Additional equipment atop armor can be worn to also boost those skills. While the Hunter starts the game with basic equipment and can buy some equipment, most of the gear must be made by collecting resources from the field, including parts that are carved from downed monsters or given as rewards from completing quests successfully.<br><br>The gameplay loop becomes one of selecting the best equipment to defeat a specific monster, and using the parts from that monster to make better gear as to face even tougher monsters. However, as the monster parts that are obtained are distributed based on certain rarity factors, a player may need to grind, hunting the same monster repeatedly to get the right parts.</p>
+		</div>
+		</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2500);    
+}
+</script>
+	</div>
+	<div class="right">
+			
+			<a href="mhfz.html"><img class="cat" src="icon/meow pro.png" style="width: 100%; height:100%"></a>
+			<h4 class="mhfont">Click me for the detail of Monster Hunter Fountier Z!</h4>
+			<div class="sidecontainer">
+			<img class="bar" src="background/background.jpg" style="width: 100%">
+			<div class="textimg">
+				<h2 class="mhfont">Advanced Information</h2>
+					<p><a href="special hunting equipment.html">Special Hunting Equipment</a></p>
+					<p><a href="hunting large monsters.html">Hunt Large Monsters</a></p>
+					<p><a href="the four styles.html">Styles and Arts</a></p>
+					<p><a href="talismans and decorations.html">Talismans info</a></p>
+					<p><a href="hunter arts.html">Hunter Arts</a></p>
+					<p><a href="palicoes function.html">Palicoes Function</a></p>
+
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<p>Copyright &copy;2018 southern</p>
+	</div>
+
+</body>
+</html>
